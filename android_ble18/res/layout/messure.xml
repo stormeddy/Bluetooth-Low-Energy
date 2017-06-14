@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout android:layout_width="fill_parent" android:orientation="vertical"   android:background="@drawable/activity_ble"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1">
+	        <Button android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/back" android:text="断开" />
+	    </LinearLayout>
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1">
+	        <Button android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/complete" android:text="完成"/>
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="横坐标:" android:textSize="20dp"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+			<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/xcoordinate" android:text="0"
+			android:inputType="numberDecimal" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="纵坐标:" android:textSize="20dp"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+			<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ycoordinate" android:text="0"
+			android:inputType="numberDecimal" />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:orientation="vertical">
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    		<TextView android:id="@+id/rssiText0" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="rssi0:" android:textSize="20dp"/>
+	    	</LinearLayout>
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rssi0" android:text="0" android:textSize="20dp"/>
+			</LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    		<TextView android:id="@+id/rssiText1" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="rssi1:" android:textSize="20dp"/>
+	    	</LinearLayout>
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rssi1" android:text="0" android:textSize="20dp"/>
+			</LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    		<TextView android:id="@+id/rssiText2" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="rssi2:" android:textSize="20dp"/>
+	    	</LinearLayout>
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rssi2" android:text="0" android:textSize="20dp"/>
+			</LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+	    		<TextView android:id="@+id/rssiText3" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="rssi3:" android:textSize="20dp"/>
+	    	</LinearLayout>
+	    	<LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1" android:gravity="center">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rssi3" android:text="0" android:textSize="20dp"/>
+			</LinearLayout>
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1">
+	        <Button android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/messure" android:text="测量" />
+	    </LinearLayout>
+	    <LinearLayout android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1">
+	        <Button android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/next" android:text="下一个"/>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
